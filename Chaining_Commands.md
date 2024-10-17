@@ -1,4 +1,4 @@
-1. Chaining with semicolons
+1. Chaining with semicolons<br/>
 flag: pwn.college{g_zetumH-akxAgZaZ2YZx4W-ShM.dVTN4QDL5cjN0czW}
 ~$  /challenge/pwn ; /challenge/college
 We chain 2 commands using ;.
