@@ -1,47 +1,47 @@
-THE ROOT
-The flag is captured captured by invoking the "pwn" program using its absolute path.
-command- /pwn
+1.THE ROOT<br/>
+The flag is captured captured by invoking the "pwn" program using its absolute path.<br/>
+command- /pwn<br/>
 
 
-Program and Absolute Paths
-Invoking "challenge" directory and "run" program in the terminal will give us the flag for this challenge.
-command- /challenge/run
+2.Program and Absolute Paths<br/>
+Invoking "challenge" directory and "run" program in the terminal will give us the flag for this challenge.<br/>
+command- /challenge/run<br/>
 
 
-Position THY Self
-By changing directory(cd /directoryname) to "etc" directory and then invoking the "challenge" directory with "run" program will give us the flag.
-command- cd /etc
-        /challenge/run
+3.Position THY Self<br/>
+By changing directory(cd /directoryname) to "etc" directory and then invoking the "challenge" directory with "run" program will give us the flag.<br/>
+command- cd /etc<br/>
+        /challenge/run<br/>
 
 
-Positon Elsewhere
-By first invoking "/challenge/run" provides with the location of the directory i.e., /proc/301. By changing directory to /proc/301 and then invoking /challenge/run.
-command- cd /proc/301.
-        /challenge/run
+4.Positon Elsewhere<br/>
+By first invoking "/challenge/run" provides with the location of the directory i.e., /proc/301. By changing directory to /proc/301 and then invoking /challenge/run.<br/>
+command- cd /proc/301.<br/>
+        /challenge/run<br/>
         
 
-Position Yte Elsewhere
-This challenge is similar to the previous challenge. The only difference is that the directory path is longer than the previous one.
-command- cd /usr/share/zoneinfo/posix/Asia
-         /challenge/run
+5.Position Yte Elsewhere<br/>
+This challenge is similar to the previous challenge. The only difference is that the directory path is longer than the previous one.<br/>
+command- cd /usr/share/zoneinfo/posix/Asia<br/>
+         /challenge/run<br/>
 
 
-Implicit Relative Paths, From /:
+6.Implicit Relative Paths, From /:
 The challenge wants us to invoke using / command, so "cd /" will open the home directory and the invoking "challenge/run" would give us the flag.
 command- cd /
          challenge/run
 
 
-Explicit Relative Paths, From /:
- A relative path must used with /. While invoking "/challenge/run", start the command with "." to remain in the same directory(./challenge/run).
-command- cd /
-         ./challenge/run
+8.Explicit Relative Paths, From /:<br/>
+ A relative path must used with /. While invoking "/challenge/run", start the command with "." to remain in the same directory(./challenge/run).<br/>
+command- cd /<br/>
+         ./challenge/run<br/>
 
 
-Implicit Relative Paths
-The program must be invoked from the challenge directory rather than the home directory. After changing directory, just using the naked command "run" would result in an error since  will search for programs with same name outside of the current directory as well. "./run" would search for programs in the current directory.
-command- cd /challenge
-         ./run
+9.Implicit Relative Paths<br/>
+The program must be invoked from the challenge directory rather than the home directory. After changing directory, just using the naked command "run" would result in an error since  will search for programs with same name outside of the current directory as well. "./run" would search for programs in the current directory.<br/>
+command- cd /challenge<br/>
+         ./run<br/>
 
 
 Home Sweet Homw
