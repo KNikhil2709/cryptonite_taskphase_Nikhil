@@ -39,7 +39,7 @@ Command- cd/challenge/files<br/>
 
 
 
-6.Exclusionary Globbing
-The ^ character in [] will invert the functionality of the glob and use the files which dont have the characters entered, since we need to use the files not starting with p,w,n, our argument will be- [^pwn]*
-Command- cd /challenge/files
-        /challenge/files$ /challenge/run [^pwn]*
+6.Exclusionary Globbing<br/>
+The ^ character in [] will invert the functionality of the glob and use the files which dont have the characters entered, since we need to use the files not starting with p,w,n, our argument will be- [^pwn]*<br/>
+Command- cd /challenge/files<br/>
+        /challenge/files$ /challenge/run [^pwn]*<br/>
